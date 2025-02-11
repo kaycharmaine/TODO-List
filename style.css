@@ -1,0 +1,32 @@
+body {
+    background-color: #acdcee;
+    text-align: center;
+}
+
+#container {
+    background-color: #f0fbff;
+    width: 50%;
+    margin: auto;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 10px;
+    border-radius: 4px;
+}
+
+h1, h2 {
+    color: #475053; ;
+    font-family: 'Arial', sans-serif;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 0px solid #2e94b9;
+}
+
+#addTask {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #2e94b9;
+    border: none;
+    font-style: bold;
+}
