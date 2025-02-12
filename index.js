@@ -4,17 +4,14 @@ const tasksDiv = document.getElementById("tasks");
 const input = document.getElementById("taskInput");
 const storageKey = "tasks";
 
-function renderTasks() 
-{
-    tasksDiv.innerHTML = null;
+function renderTasks() {
+    tasksDiv.innerHTML = "";
 
     for (const [idx, task] of Object.entries(tasks)) {
         const container = document.createElement("div");
-        container.style.marginBottom = "10px";
+        container.classList.add("task-container");
 
         const text = document.createElement("p");
-        text.style.display ="inline";
-        text.style.marginRight = "10px";
         text.textContent = task;
 
         const button = document.createElement("button");
@@ -23,10 +20,10 @@ function renderTasks()
 
         container.appendChild(text);
         container.appendChild(button);
-
         tasksDiv.appendChild(container);
     }
-} 
+}
+
 
 function loadTasks() 
 {
